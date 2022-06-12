@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+
+}
+.txt-sm{
+font-size: 13px;
+}
+.txt-md{
+font-size: 13.33px;
+}
+.txt-n{
+font-size: 16px;
+}
+.txt-lg{
+font-size: 22px;
+}
+.txt-xl{
+font-size: 24px;
+}
+.txt-xxl{
+font-size: 55px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.showcase{
+    height: 95vh;
+    background-image: url('img/header.jpg');
+    background-position: 0px -60px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.showcase-top{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 23px;
+    margin-bottom: 30px;
+}
+.showcase-top a{
+    text-decoration: none;
+}
+.showcase-middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.showcase-middle p,.showcase-middle img{
+    margin:20px 0px;
+}
+.showcase-middle p:last-child{
+    margin-bottom: 0;
+    font-size: 10px;
+}
+.showcase-middle p:nth-child(3){
+    font-size: 18px;
+    font-weight: bold;
+}
+.showcase-middle p:first-child{
+    margin-top: 0;
+    color:#00ed82;
+    font-weight: bold;
+}
+.showcase-middle p:nth-child(3){
+    font-size: 18px;
+}
+.showcase-middle img{
+    width: 270px;
+}
+a.trial{
+    font-weight:500;
+    padding: 14px 34px;
+    color: #000;
+    text-decoration: none;
+    background-color: #fff ;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+.showcase-card{
+    width: 100%;
+    padding: 30px 50px;
+    background:linear-gradient(318.68deg,#0f495c 0%,#0d3640 49.72%, #08141f 100%) !important;
+    display: flex;
+    justify-content: space-between;
+}
+.showcase-card a{
+    color: #ccc;
+}
+.content-1{
+    display: flex;
+}
+.content-1 img{
+    width: 26%;
+    height: auto;
+    margin-right: 30px;
+}
+a#bundle{
+    color:#fff;
+}
+.content-2{
+    display: flex;
+    flex-direction: column;
+}
+.content-2 a:first-child{
+    text-decoration: none;
+    padding: 17px 29px;
+    border:2px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 7px;
+}
+.content-2 a:last-child{
+align-self: center;
+}
+.content-1-c p:first-child{
+    color:#00ed82;
+    font-weight: bold;
+}
+.cat-tiles{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+}
+.tile{
+    height: 430px;
+}
+.categories{
+    padding: 100px 9%;
+    background-color: #000;
+    color: #fff;
+}
+.cat-title{
+    text-align: center;
+    padding: 0 170px;
+}
+.cat-title h1{
+    margin:30px 0;
+}
+.cat-title p{
+    line-height: 1.5;
+}
+.cat-title p:first-child{
+    color: #00ed82;
+    font-weight: bold;
+}
+.cat-title p:last-child{
+margin-bottom: 50px;
+}
+.tile-1{
+background-image: url('img/cover-1.jpg');
+}
+.tile-2{
+    background-image: url('img/cover-2.jpg');
+}
+.tile-3{
+    background-image: url('img/cover-3.jpg');
+}
+.tile-4{
+    background-image: url('img/cover-4.jpg');
+}
+.tile{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.tile::after{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    content: '';
+    z-index: 1;
+}
+.tile p{
+    position: relative;
+    z-index: 2;
+    padding-bottom: 10px;
+}
+.tile-content{
+    padding: 20px;
+}
+.live{
+    background-color: #151516;
+    color: #fff;
+    padding: 40px;
+}
+.live-content{
+    padding: 6% 7%;
+    border:5px solid #00ed82;
+    border-radius: 14px;
+}
+.live-content h1{
+    padding: 30px 0;
+}
+.text-c{
+    width: 72%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.7;
+}
+.text-c p:nth-child(3),.text-c p:nth-child(4){
+    margin-bottom:20px;
+}
+.text-c a{
+    color: #fff;
+}
+.live-highlight img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+li{
+    padding:3px 0;
+}
+.link-container{
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 35px 0;
+    border-bottom: 1px solid #ccc;
+    justify-content: stretch;
+}
+.desc-links{
+    padding-bottom: 40px;
+    background-color: #ebedf2;
+}
+.s-links{
+    width: 75%;
+    margin: auto;
+    padding-top: 40px;
+}
+.s-links i{
+    margin-right: 17px;
+    color: #666;
+}
