@@ -47,6 +47,7 @@ body{
 }
 .showcase-top a{
     text-decoration: none;
+    color: #fff;
 }
 .showcase-middle{
     display: flex;
@@ -54,25 +55,26 @@ body{
     align-items: center;
     justify-content: center;
 }
+.showcase-m-c{
+    padding-top: 30px;
+    text-align: center;
+    height: 100%;
+}
 .showcase-middle p,.showcase-middle img{
     margin:15px 0px;
 }
-.showcase-middle p:last-child{
+/* .showcase-middle p:last-child{
     margin-bottom: 0;
     font-size: 10px;
 }
 .showcase-middle p:nth-child(3){
-    font-size: 18px;
     font-weight: bold;
 }
 .showcase-middle p:first-child{
     margin-top: 0;
     color:#00ed82;
     font-weight: bold;
-}
-.showcase-middle p:nth-child(3){
-    font-size: 18px;
-}
+}*/
 .showcase-middle img{
     width: 270px;
 }
@@ -83,11 +85,11 @@ a.trial{
     text-decoration: none;
     background-color: #fff ;
     border-radius: 5px;
-    margin: 10px 0px 5px 0px;
+    margin: 30px;
 }
 .showcase-card{
     position: relative;
-    top:20px;
+    top:84px;
     width: 100%;
     padding: 30px 50px;
     background:linear-gradient(318.68deg,#0f495c 0%,#0d3640 49.72%, #08141f 100%) !important;
@@ -102,8 +104,9 @@ a.trial{
 }
 .content-1 img{
     width: 26%;
-    height: auto;
+    height: fit-content;
     margin-right: 30px;
+    align-self: center;
 }
 a#bundle{
     color:#fff;
@@ -115,17 +118,19 @@ a#bundle{
 }
 .content-2 a:first-child{
     text-decoration: none;
-    padding: 17px 29px;
+    padding: 20px 22px;
     border:2px solid #fff;
     border-radius: 5px;
     margin-bottom: 7px;
+    text-align: center;
+    width: 170px;
 }
 .content-2 a:last-child{
 align-self: center;
 }
 .content-1-c p:first-child{
     color:#00ed82;
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 .cat-tiles{
     display: grid;
@@ -246,4 +251,39 @@ li{
 .s-links i{
     margin-right: 17px;
     color: #666;
+}
+
+
+@media(max-width:735px){
+    .showcase-card,.content-1{
+        flex-direction: column;
+        text-align: center;
+    }
+    .content-2{
+        align-items: center;
+    }
+    .content-1 img{
+        width: 50%;
+        margin: auto;
+    }
+    .content-1{
+        margin-bottom: 20px;
+    }
+    #disap{
+        display: none;
+    }
+    .showcase-middle img{
+        width: 200px;
+    }
+}
+@media(max-width:550px){
+    /* .showcase-middle p:nth-child(3){
+        font-size: 14px;
+        font-weight: bold;
+    } */
+}
+@media(max-width:450px){
+    .content-1 img{
+        width: 100%;
+    }
 }
