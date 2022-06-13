@@ -6,6 +6,9 @@
 :root{
 
 }
+.txt-rsm{
+    font-size: 10px;
+}
 .txt-sm{
 font-size: 13px;
 }
@@ -28,6 +31,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .showcase{
+    position:relative;
     height: 95vh;
     background-image: url('img/header.jpg');
     background-position: 0px -60px;
@@ -51,7 +55,7 @@ body{
     justify-content: center;
 }
 .showcase-middle p,.showcase-middle img{
-    margin:20px 0px;
+    margin:15px 0px;
 }
 .showcase-middle p:last-child{
     margin-bottom: 0;
@@ -79,9 +83,11 @@ a.trial{
     text-decoration: none;
     background-color: #fff ;
     border-radius: 5px;
-    margin: 20px 0px;
+    margin: 10px 0px 5px 0px;
 }
 .showcase-card{
+    position: relative;
+    top:20px;
     width: 100%;
     padding: 30px 50px;
     background:linear-gradient(318.68deg,#0f495c 0%,#0d3640 49.72%, #08141f 100%) !important;
@@ -105,6 +111,7 @@ a#bundle{
 .content-2{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .content-2 a:first-child{
     text-decoration: none;
@@ -118,7 +125,7 @@ align-self: center;
 }
 .content-1-c p:first-child{
     color:#00ed82;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 .cat-tiles{
     display: grid;
