@@ -467,7 +467,7 @@ li{
         margin: auto;
     }
     .live{
-        padding:0px !important;
+        padding:40px 0px;
     }
 }
 @media(max-width:800px){
